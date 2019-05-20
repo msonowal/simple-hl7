@@ -1,0 +1,42 @@
+{
+    "name": "Msonowal/simple-hl7",
+    "description": "Simple HL7 Message generator and sender.",
+    "type": "library",
+    "license": "MIT",
+    "keyword": ["HL7", "Parse", "Generate", "Send"],
+    "authors": [
+        {
+            "name": "Manash Jyoti Sonowal",
+            "email": "manash149@gmail.com",
+            "role": "Owner"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "require": {
+        "php": ">=7.1",
+        "ext-sockets": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Msonowal\\HL7\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "Msonowal\\HL7\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}

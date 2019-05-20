@@ -1,0 +1,41 @@
+<?php
+
+use Msonowal\HL7;
+use Msonowal\HL7\Segments\PV1;
+use Msonowal\HL7\Segments\ORC;
+use Msonowal\HL7\Segments\OBX;
+use Msonowal\HL7\Segments\OBR;
+use Msonowal\HL7\Segments\DG1;
+use Msonowal\HL7\Segments\NTE;
+use Msonowal\HL7\Segments\IN3;
+use Msonowal\HL7\Segments\IN1;
+use Msonowal\HL7\Segments\PID;
+use Msonowal\HL7\Segments\MSH;
+use Msonowal\HL7\Segments\EVN;
+use Msonowal\HL7\Segment;
+use Msonowal\HL7\Messages\ACK;
+use Msonowal\HL7\Message;
+use Msonowal\HL7\Connection;
+
+return (object)[
+    'rootNamespace' => HL7::class,
+    'destDirectory' => 'docs',
+    'format' => 'github',
+    'classes' => [
+        Connection::class,
+        Message::class,
+        ACK::class,
+        Segment::class,
+        MSH::class,
+        PID::class,
+        IN1::class,
+        IN3::class,
+        NTE::class,
+        DG1::class,
+        OBR::class,
+        OBX::class,
+        ORC::class,
+        PV1::class,
+        EVN::class,
+    ],
+];
