@@ -7,7 +7,7 @@ A PHP-based HL7 v2.x Parsing, Generation and Sending library, inspired from the 
 ## Installation
 
 ```bash
-composer require msonowal/hl7
+composer require msonowal/simple-hl7
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 {
-    "name": "Msonowal/simple-hl7",
+    "name": "msonowal/simple-hl7",
     "description": "Simple HL7 Message generator and sender.",
     "type": "library",
     "license": "MIT",
