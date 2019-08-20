@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Msonowal\HL7;
 
-use Msonowal\Exceptions\HL7ConnectionException;
+use Msonowal\HL7\Exceptions\HL7ConnectionException;
 use Exception;
 
 /**
