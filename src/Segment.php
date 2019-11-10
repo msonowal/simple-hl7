@@ -3,7 +3,6 @@
 namespace Msonowal\HL7;
 
 use InvalidArgumentException;
-use Msonowal\HL7;
 
 class Segment
 {
@@ -31,7 +30,7 @@ class Segment
      * @param array $fields Fields for segment
      * @throws \InvalidArgumentException
      */
-    public function __construct(string $name, array $fields = null)
+    public function __construct(string $name, array $fields = [])
     {
         // Is the name 3 upper case characters?
         if ((!$name) || (\strlen($name) !== 3) || (strtoupper($name) !== $name)) {

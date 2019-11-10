@@ -3,7 +3,7 @@
     "description": "Simple HL7 Message generator and sender.",
     "type": "library",
     "license": "MIT",
-    "keyword": ["HL7", "Parse", "Generate", "Send"],
+    "keywords": ["HL7", "Parse", "Generate", "Send"],
     "authors": [
         {
             "name": "Manash Jyoti Sonowal",
