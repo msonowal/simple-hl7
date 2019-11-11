@@ -37,14 +37,15 @@ class MSH extends Segment
      * @throws \InvalidArgumentException
      * @throws \Exception
      */
-    public function __construct(array $fields = null, array $hl7Globals = null)
+    public function __construct(array $fields = [], array $hl7Globals = [])
     {
         parent::__construct('MSH', $fields);
 
         // Only fill default fields if no fields array is given
         //
-        if (!isset($fields)) {
-            if (!\is_array($hl7Globals)) {
+        if (! count($fields) ) {
+
+            if (count($hl7Globals) <= 0) {
                 $this->setField(1, '|');
                 $this->setField(2, '^~\\&');
                 $this->setField(7, strftime('%Y%m%d%H%M%S'));
@@ -67,6 +68,7 @@ class MSH extends Segment
                 $this->setField(10, $this->getField(7) . random_int(10000, 99999));
                 $this->setField(12, $hl7Globals['HL7_VERSION']);
             }
+            
         }
     }
 
