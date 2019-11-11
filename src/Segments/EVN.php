@@ -16,7 +16,7 @@ class EVN extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(array $fields = [])
     {
         parent::__construct('EVN', $fields);
         $this->setID($this::$setId++);

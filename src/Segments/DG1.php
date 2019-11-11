@@ -16,7 +16,7 @@ class DG1 extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(array $fields = [])
     {
         parent::__construct('DG1', $fields);
         $this->setID($this::$setId++);

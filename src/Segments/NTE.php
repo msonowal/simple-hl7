@@ -16,7 +16,7 @@ class NTE extends Segment
      */
     protected static $setId = 1;
 
-    public function __construct(array $fields = null)
+    public function __construct(array $fields = [])
     {
         parent::__construct('NTE', $fields);
         $this->setID($this::$setId++);
